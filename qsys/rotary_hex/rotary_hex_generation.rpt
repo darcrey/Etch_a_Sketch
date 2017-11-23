@@ -1,0 +1,45 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate /home/ecad/Desktop/exercise5-2/rotary_hex.qsys --block-symbol-file --output-directory=/home/ecad/Desktop/exercise5-2/rotary_hex --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading exercise5-2/rotary_hex.qsys
+Progress: Reading input file
+Progress: Adding EightBitsToSevenSeg_0 [EightBitsToSevenSeg 1.0]
+Progress: Parameterizing module EightBitsToSevenSeg_0
+Progress: Adding RotaryCtl2_0 [RotaryCtl2 1.0]
+Warning: RotaryCtl2_0: Component type RotaryCtl2 is not in the library
+Progress: Parameterizing module RotaryCtl2_0
+Progress: Adding clk_0 [clock_source 16.1]
+Progress: Parameterizing module clk_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Error: rotary_hex.RotaryCtl2_0: Component RotaryCtl2 1.0 not found or could not be instantiated
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate /home/ecad/Desktop/exercise5-2/rotary_hex.qsys --synthesis=VERILOG --output-directory=/home/ecad/Desktop/exercise5-2/rotary_hex/synthesis --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading exercise5-2/rotary_hex.qsys
+Progress: Reading input file
+Progress: Adding EightBitsToSevenSeg_0 [EightBitsToSevenSeg 1.0]
+Progress: Parameterizing module EightBitsToSevenSeg_0
+Progress: Adding RotaryCtl2_0 [RotaryCtl2 1.0]
+Warning: RotaryCtl2_0: Component type RotaryCtl2 is not in the library
+Progress: Parameterizing module RotaryCtl2_0
+Progress: Adding clk_0 [clock_source 16.1]
+Progress: Parameterizing module clk_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Error: rotary_hex.RotaryCtl2_0: Component RotaryCtl2 1.0 not found or could not be instantiated
+Info: rotary_hex: Generating rotary_hex "rotary_hex" for QUARTUS_SYNTH
+Warning: rotary_hex: "No matching role found for clk_0:clk:clk_out (clk)"
+Warning: rotary_hex: "No matching role found for EightBitsToSevenSeg_0:data_in:hexval (export)"
+Warning: rotary_hex: "No matching role found for clk_0:clk_reset:reset_n_out (reset)"
+Info: EightBitsToSevenSeg_0: "rotary_hex" instantiated EightBitsToSevenSeg "EightBitsToSevenSeg_0"
+Error: RotaryCtl2_0: missing_module does not support generation.
+Error: Generation stopped, 1 or more modules remaining
+Info: rotary_hex: Done "rotary_hex" with 4 modules, 2 files
+Error: qsys-generate failed with exit code 1: 3 Errors, 4 Warnings
+Info: Finished: Create HDL design files for synthesis

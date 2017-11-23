@@ -1,0 +1,16 @@
+	component hex_led is
+		port (
+			clk_clk                              : in  std_logic                    := 'X';             -- clk
+			eightbitstosevenseg_0_data_in_export : in  std_logic_vector(7 downto 0) := (others => 'X'); -- export
+			eightbitstosevenseg_0_led_pins_led0  : out std_logic_vector(6 downto 0);                    -- led0
+			eightbitstosevenseg_0_led_pins_led1  : out std_logic_vector(6 downto 0);                    -- led1
+			eightbitstosevenseg_1_data_in_export : in  std_logic_vector(7 downto 0) := (others => 'X'); -- export
+			eightbitstosevenseg_1_led_pins_led0  : out std_logic_vector(6 downto 0);                    -- led0
+			eightbitstosevenseg_1_led_pins_led1  : out std_logic_vector(6 downto 0);                    -- led1
+			eightbitstosevenseg_2_data_in_export : in  std_logic_vector(7 downto 0) := (others => 'X'); -- export
+			eightbitstosevenseg_2_led_pins_led0  : out std_logic_vector(6 downto 0);                    -- led0
+			eightbitstosevenseg_2_led_pins_led1  : out std_logic_vector(6 downto 0);                    -- led1
+			reset_reset_n                        : in  std_logic                    := 'X'              -- reset_n
+		);
+	end component hex_led;
+

@@ -1,0 +1,41 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate /home/ecad/Desktop/exercise5-2/hex_led.qsys --block-symbol-file --output-directory=/home/ecad/Desktop/exercise5-2/rotary_hex --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading exercise5-2/hex_led.qsys
+Progress: Reading input file
+Progress: Adding EightBitsToSevenSeg_0 [EightBitsToSevenSeg 1.0]
+Progress: Parameterizing module EightBitsToSevenSeg_0
+Progress: Adding EightBitsToSevenSeg_1 [EightBitsToSevenSeg 1.0]
+Progress: Parameterizing module EightBitsToSevenSeg_1
+Progress: Adding EightBitsToSevenSeg_2 [EightBitsToSevenSeg 1.0]
+Progress: Parameterizing module EightBitsToSevenSeg_2
+Progress: Adding clk_0 [clock_source 16.1]
+Progress: Parameterizing module clk_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate /home/ecad/Desktop/exercise5-2/hex_led.qsys --synthesis=VERILOG --output-directory=/home/ecad/Desktop/exercise5-2/rotary_hex/synthesis --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading exercise5-2/hex_led.qsys
+Progress: Reading input file
+Progress: Adding EightBitsToSevenSeg_0 [EightBitsToSevenSeg 1.0]
+Progress: Parameterizing module EightBitsToSevenSeg_0
+Progress: Adding EightBitsToSevenSeg_1 [EightBitsToSevenSeg 1.0]
+Progress: Parameterizing module EightBitsToSevenSeg_1
+Progress: Adding EightBitsToSevenSeg_2 [EightBitsToSevenSeg 1.0]
+Progress: Parameterizing module EightBitsToSevenSeg_2
+Progress: Adding clk_0 [clock_source 16.1]
+Progress: Parameterizing module clk_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: hex_led: Generating hex_led "hex_led" for QUARTUS_SYNTH
+Info: EightBitsToSevenSeg_0: "hex_led" instantiated EightBitsToSevenSeg "EightBitsToSevenSeg_0"
+Info: rst_controller: "hex_led" instantiated altera_reset_controller "rst_controller"
+Info: hex_led: Done "hex_led" with 3 modules, 5 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis
